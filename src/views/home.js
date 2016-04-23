@@ -1,18 +1,18 @@
 export default () => (
 	<div className="index">
 		<div className="description">
-			BEM – Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
+			BEM – Block Element Modifier은 front-end 영역에서 재사용 가능한 컴포넌트를 만들고 코드 공유를 가능하도록 도와주는 방법론입니다.
 		</div>
 		<div className="container" style={{marginBottom: '50px'}}>
 			<div className="row">
 				<div className="column">
-					{advantage({title: 'Easy', color: 'block', text: 'To use BEM you literally do not need nothing besides BEM naming.'})}
+					{advantage({title: '쉬운', color: 'block', text: 'BEM을 사용하기 위해서, BEM 네이밍 외에 별도로 필요한 것은 없습니다.'})}
 				</div>
 				<div className="column">
-					{advantage({title: 'Modular', color: 'element', text: 'Independent blocks and css selectors makes your code reusable and modular.'})}
+					{advantage({title: '모듈화된', color: 'element', text: '독립적인 블록들과 CSS 셀렉터들은 당신의 코드를 모듈화하고 재사용 가능하도록 만들어줍니다.'})}
 				</div>
 				<div className="column">
-					{advantage({title: 'Flexible', color: 'modifier', text: 'Methodology and tools, that can be recomposed and configured in the way you like BEM.'})}
+					{advantage({title: '유연한', color: 'modifier', text: '당신이 BEM을 좋아하는데 도움이 될만한, 재조립과 설정 가능한 방법론과 도구들이 있습니다.'})}
 				</div>
 			</div>
 		</div>
@@ -47,11 +47,11 @@ function panel({type, title, link, img, children}) {
 function introductionPanel() {
 	return panel({
 		type: 'introduction',
-		title: 'Introduction',
+		title: '소개',
 		link: '/introduction/',
 		img: '/assets/ic_book_white_24px.svg',
 		children: (
-			<p>BEM is a highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.</p>
+			<p>BEM은 당신의 front-end 코드를 읽고 이해하는데, 협업할 때, 확장할 때 좀 더 쉽게 해주며, 좀 더 강건하고 명확하며 아주 엄격하게 만들어주는 대단히 유용하고 강력하며 단순한 네이밍 관례입니다.</p>
 		)
 	});
 }
@@ -59,11 +59,11 @@ function introductionPanel() {
 function namingPanel() {
 	return panel({
 		type: 'naming',
-		title: 'Naming',
+		title: '네이밍',
 		link: '/naming/',
 		img: '/assets/ic_text_format_white_24px.svg',
 		children: (
-			<p>The BEM approach ensures that everyone who participates in the development of a website works with a single codebase and speaks the same language. Using proper naming will prepare you for the changes in design of the website.</p>
+			<p>BEM 접근법은 하나의 웹사이트 개발에 참여하고 있는 모든 이들이 단일 codebase로 협업하고 동일한 언어로 대화할 수 있도록 해줍니다. 적합한 네이밍 사용은 당신으로 하여금 웹사이트 디자인 변화에 잘 대비 수 있도록 해줍니다.</p>
 		)
 	});
 }
@@ -76,10 +76,10 @@ function questionsPanel() {
 		img: '/assets/ic_question_answer_white_24px.svg',
 		children: (
 			<div>
-				<p><i>— <a href="/faq/#custom-tags-for-blocks">Why do I need CSS classes for block instead of using semantic custom tags?</a></i></p>
-				<p><i>— <a href="/faq/#encapsulating-tag-selector">Can I combine a tag and a class in selector like button.button?</a></i></p>
+				<p><i>— <a href="/faq/#custom-tags-for-blocks">왜 시맨틱 커스텀 태그를 사용하는 대신에 블록 CSS 클래스를 사용해야 하나요?</a></i></p>
+				<p><i>— <a href="/faq/#encapsulating-tag-selector">button.button과 같이 셀렉터 내에서 태그와 클래스를 혼합하여 사용할 수 있나요?</a></i></p>
 				<br/>
-				<p>Look for answers in awesome <a href="/faq/">FAQ list</a>!</p>
+				<p>놀라운 <a href="/faq/">FAQ 목록</a>에서 해답을 찾아보세요!</p>
 			</div>
 		)
 	});
@@ -89,7 +89,7 @@ function companiesPanel() {
 	return (
 		<div className="panel panel--companies">
 			<div className="panel__container">
-				<h2>Companies using BEM</h2>
+				<h2>BEM을 이용 중인 회사들</h2>
 				<ul>
 					<li><a href="https://yandex.com" title="Yandex"><img src="/assets/companies/yandex.png"/></a></li>
 					<li><a href="http://www.jetbrains.com" title="JetBrains"><img src="/assets/companies/jetbrains.png"/></a></li>
