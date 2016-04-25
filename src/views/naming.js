@@ -1,17 +1,17 @@
 export default () => (
 	<div className="container naming">
-	<h1>Naming</h1>
+	<h1>네이밍</h1>
 
 			<blockquote>컴퓨터 과학에는 두 가지 난제가 존재한다. 캐시 무효화와 네이밍 — <i>Phil Karlton</i></blockquote>
 
-			<p>올바른 스타일가이드가 레거시 코드에서 새로운 기능을 디버그하고 구현함에 있어서 개발 속도를 현저히 높인다는 것은 사실로 알려져 있다. 슬프게도, 대부분의 CSS codebase는 (때떄로) 어떤 구조와 네이밍 관례도 없이 개발됩니다. 이것은 오랜 시간동안 유지보수하기 어려운 CSS codebase를 유발시킵니다.</p>
+			<p>올바른 스타일가이드가 레거시 코드에서 새로운 기능을 디버그하고 구현함에 있어서 개발 속도를 현저히 높인다는 것은 사실로 알려져 있다. 슬프게도, 대부분의 CSS codebase는 (때때로) 어떤 구조와 네이밍 관례도 없이 개발됩니다. 이것은 오랜 시간동안 유지보수하기 어려운 CSS codebase를 유발시킵니다.</p>
 
 			<p>BEM 접근법은 웹 사이트 개발에 참여하는 모든이들이 단일 codebase로 협업하고 동일한 언어로 말할 수 있도록 해줍니다. 적합한 네이밍 사용은 웹 사이트 디자인 변화에 대비할 수 있도록 해줄겁니다.</p>
 
 			<div className="naming__cell naming__cell--block">
 				<h3>Block</h3>
 
-				<p>그 자체로 의미를 가지는 독립적인 개체를 인캡슐화합니다. Block이 서로 간에 내재되고 상호 작용될 수 있음에도, 의미적으로는 우선 순위나 계층 없이 평등함을 유지합니다. DOM 표현이 없는 전체 객체들(컨트롤러나 모델) 또한 block이 될 수 있습니다.</p>
+				<p>그 자체로 의미를 가지는 독립적인 개체를 인캡슐화합니다. Block이 서로 간에 내재되고 상호 작용될 수 있음에도, 의미적으로는 우선 순위나 계층 없이 평등함을 유지합니다. DOM 표현이 없는 전체 개체들(컨트롤러나 모델) 또한 block이 될 수 있습니다.</p>
 			</div>
 
 			<div className="row">
@@ -43,7 +43,7 @@ export default () => (
 
 			<div className="naming__cell naming__cell--element">
 				<h3>Element</h3>
-				<p>Block의 일부분으로 단독으로는 의미를 가지지 못합니다. 모든 element들이 의미적으로 자신의 block에 종속적입니다.</p>
+				<p>Block의 일부분이며 혼자서는 아무런 의미를 가지지 못합니다. 모든 element들이 의미적으로 자신의 block에 종속적입니다.</p>
 			</div>
 
 			<div className="row">
@@ -119,7 +119,7 @@ div.block__elem { color: #042; }`}</pre>
 
 			<h3>예제</h3>
 
-			<p>Modifier <code>theme: "xmas"</code>와 <code>simple: true</code>, element <code>input</code>와 <code>submit</code>를 가지고 있는 block 폼과 폼 컨트롤이 모두 입력되지 않으면 제출하지 못하도록 하기 위한 자체 modifier <code>disabled: true</code>를 가지는 <code>submit</code> element가 있다고 가정해보자:</p>
+			<p>Modifier <code>theme: "xmas"</code>와 <code>simple: true</code>, element <code>input</code>와 <code>submit</code>를 가지고 있는 block 폼과 폼 컨트롤이 모두 입력되지 않으면 제출하지 못하도록 하기 위한 자체 modifier <code>disabled: true</code>를 가지는 <code>submit</code> element가 있다고 가정해보세요:</p>
 
 			<div className="row">
 				<div className="column">

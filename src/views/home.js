@@ -1,18 +1,18 @@
 export default () => (
 	<div className="index">
 		<div className="description">
-			BEM – Block Element Modifier은 front-end 영역에서 재사용 가능한 컴포넌트를 만들고 코드 공유를 가능하도록 도와주는 방법론입니다.
+			BEM – Block Element Modifier은 front-end에서 재사용 가능한 컴포넌트와 코드 공유를 달성할 수 있도록 도와주는 방법론입니다.
 		</div>
 		<div className="container" style={{marginBottom: '50px'}}>
 			<div className="row">
 				<div className="column">
-					{advantage({title: '쉬운', color: 'block', text: 'BEM을 사용하기 위해서, BEM 네이밍 외에 별도로 필요한 것은 없습니다.'})}
+					{advantage({title: '쉬움', color: 'block', text: 'BEM을 사용하기 위해서, BEM 네이밍 외에 별도로 필요한 것은 없습니다.'})}
 				</div>
 				<div className="column">
-					{advantage({title: '모듈화된', color: 'element', text: '독립적인 블록들과 CSS 셀렉터들은 당신의 코드를 모듈화하고 재사용 가능하도록 만들어줍니다.'})}
+					{advantage({title: '모듈화', color: 'element', text: '독립적인 블록들과 CSS 셀렉터들은 당신의 코드를 재사용 가능하고 모듈화 해줍니다.'})}
 				</div>
 				<div className="column">
-					{advantage({title: '유연한', color: 'modifier', text: '당신이 BEM을 좋아하는데 도움이 될만한, 재조립과 설정 가능한 방법론과 도구들이 있습니다.'})}
+					{advantage({title: '유연함', color: 'modifier', text: '당신이 좋아할 만한 방법 내에서 재조립과 설정이 가능한 방법론과 도구들이 있습니다.'})}
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@ function namingPanel() {
 		link: '/naming/',
 		img: '/assets/ic_text_format_white_24px.svg',
 		children: (
-			<p>BEM 접근법은 하나의 웹사이트 개발에 참여하고 있는 모든 이들이 단일 codebase로 협업하고 동일한 언어로 대화할 수 있도록 해줍니다. 적합한 네이밍 사용은 당신으로 하여금 웹사이트 디자인 변화에 잘 대비 수 있도록 해줍니다.</p>
+			<p>BEM 접근법은 하나의 웹사이트 개발에 참여하고 있는 모든 이들이 단일 codebase로 협업하고 동일한 언어로 대화할 수 있도록 해줍니다. 적합한 네이밍 사용은 당신으로 하여금 웹사이트 디자인 변화에 잘 대비할 수 있도록 해줍니다.</p>
 		)
 	});
 }
